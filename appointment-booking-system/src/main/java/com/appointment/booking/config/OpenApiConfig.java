@@ -13,7 +13,7 @@ public class OpenApiConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("🏥 Appointment Booking System API")
+                        .title("Appointment Booking System API")
                         .version("1.0.0")
                         .description("A comprehensive Spring Boot REST API for managing medical appointments with complete CRUD operations, conflict handling, and proper validation.")
                         .contact(new Contact()
