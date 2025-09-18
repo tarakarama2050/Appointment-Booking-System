@@ -1,10 +1,10 @@
-# 🏥 Appointment Booking System
+Appointment Booking System
 
 A comprehensive Spring Boot REST API application for managing medical appointments with complete CRUD operations, conflict handling, and Swagger documentation.
 
 
 
-## 📋 Core Features
+Core Features
 
 ✅ **Patient Registration & Management**
 ✅ **Doctor Registration & Specialization Management**  
@@ -14,28 +14,28 @@ A comprehensive Spring Boot REST API application for managing medical appointmen
 ✅ **Complete REST API with Swagger Documentation**
 ✅ **H2 In-Memory Database with Auto Schema Generation**
 
-## 🔗 API Endpoints Overview
+API Endpoints Overview
 
-### Patient Management
+Patient Management
 - `POST /api/patients` - Register new patient
 - `GET /api/patients` - Get all patients
 - `GET /api/patients/{id}` - Get patient by ID
 
-### Doctor Management  
+Doctor Management  
 - `POST /api/doctors` - Register new doctor
 - `GET /api/doctors` - Get all doctors
 - `GET /api/doctors/specialization/{spec}` - Get doctors by specialization
 
-### Availability Management
+Availability Management
 - `POST /api/doctors/{id}/availability` - Declare doctor availability
 - `GET /api/availability/doctor/{id}` - Get doctor availability
 
-### Appointment Management
+Appointment Management
 - `POST /api/appointments` - Book appointment
 - `GET /api/appointments/patient/{id}` - Get patient appointments
 - `PUT /api/appointments/{id}/cancel` - Cancel appointment
 
-## 🧪 Test with Sample Data
+Test with Sample Data
 
 Use Swagger UI for interactive testing with these sample payloads:
 
@@ -75,7 +75,7 @@ Use Swagger UI for interactive testing with these sample payloads:
 }
 ```
 
-## 🛠️ Tech Stack
+Tech Stack
 
 - **Java 17**
 - **Spring Boot 3.1.5**
@@ -84,7 +84,7 @@ Use Swagger UI for interactive testing with these sample payloads:
 - **Swagger OpenAPI 3**
 - **Maven**
 
-## 🏗️ Architecture
+Architecture
 
 ```
 📁 src/main/java/com/appointment/booking/
@@ -98,7 +98,7 @@ Use Swagger UI for interactive testing with these sample payloads:
 └── 📂 config/        # Configuration Classes
 ```
 
-## ⚡ Key Implementation Highlights
+Key Implementation Highlights
 
 - **Conflict Prevention**: Prevents double booking with availability checking
 - **Validation**: Comprehensive input validation with custom messages  
